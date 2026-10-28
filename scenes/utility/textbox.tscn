@@ -1,0 +1,251 @@
+[gd_scene format=3 uid="uid://ddh4ug8hfb8d"]
+
+[ext_resource type="Script" uid="uid://c7ldj273117hr" path="res://scripts/textbox.gd" id="1_05ifx"]
+[ext_resource type="FontFile" uid="uid://bqfo3k1vpm5id" path="res://assets/fonts/Pixel Operator/PixelOperator-Bold.ttf" id="2_dwmcq"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_57qmd"]
+bg_color = Color(0, 0, 0, 1)
+border_width_left = 4
+border_width_top = 4
+border_width_right = 4
+border_width_bottom = 4
+
+[node name="textbox" type="CanvasLayer" unique_id=1473888032]
+layer = 100
+script = ExtResource("1_05ifx")
+
+[node name="textboxcontainer" type="MarginContainer" parent="." unique_id=1415016996]
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 320.0
+offset_top = -280.0
+offset_right = -320.0
+offset_bottom = -32.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_constants/margin_left = 15
+theme_override_constants/margin_top = 15
+theme_override_constants/margin_right = 15
+theme_override_constants/margin_bottom = 15
+
+[node name="Panel" type="Panel" parent="textboxcontainer" unique_id=988286200]
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_57qmd")
+
+[node name="MarginContainer" type="MarginContainer" parent="textboxcontainer" unique_id=1907584524]
+layout_mode = 2
+theme_override_constants/margin_left = 15
+theme_override_constants/margin_top = 15
+theme_override_constants/margin_right = 15
+theme_override_constants/margin_bottom = 15
+
+[node name="Panel" type="Panel" parent="textboxcontainer/MarginContainer" unique_id=634627835]
+layout_mode = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="textboxcontainer/MarginContainer" unique_id=1089940968]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="textboxcontainer/MarginContainer/HBoxContainer" unique_id=1146480755]
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0
+theme_override_fonts/font = ExtResource("2_dwmcq")
+theme_override_font_sizes/font_size = 50
+text = "`"
+
+[node name="Label2" type="Label" parent="textboxcontainer/MarginContainer/HBoxContainer" unique_id=1491374189]
+custom_minimum_size = Vector2(1, 0)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 1
+theme_override_fonts/font = ExtResource("2_dwmcq")
+theme_override_font_sizes/font_size = 42
+text = "placeholder text
+O.1
+O.2
+O.3"
+autowrap_mode = 2
+clip_text = true
+
+[node name="Label3" type="Label" parent="textboxcontainer/MarginContainer/HBoxContainer" unique_id=2121021614]
+layout_mode = 2
+size_flags_vertical = 8
+theme_override_fonts/font = ExtResource("2_dwmcq")
+theme_override_font_sizes/font_size = 50
+text = "*"
+
+[node name="nameboxcontainer" type="MarginContainer" parent="." unique_id=1783874010]
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 320.0
+offset_top = -368.0
+offset_right = -1392.0
+offset_bottom = -257.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_constants/margin_left = 15
+theme_override_constants/margin_top = 15
+theme_override_constants/margin_right = 15
+theme_override_constants/margin_bottom = 15
+
+[node name="Panel" type="Panel" parent="nameboxcontainer" unique_id=2135061764]
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_57qmd")
+
+[node name="MarginContainer" type="MarginContainer" parent="nameboxcontainer" unique_id=1456320475]
+layout_mode = 2
+theme_override_constants/margin_left = 15
+theme_override_constants/margin_top = 15
+theme_override_constants/margin_right = 15
+theme_override_constants/margin_bottom = 15
+
+[node name="Panel" type="Panel" parent="nameboxcontainer/MarginContainer" unique_id=786315936]
+layout_mode = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="nameboxcontainer/MarginContainer" unique_id=1132493988]
+layout_mode = 2
+
+[node name="Label2" type="Label" parent="nameboxcontainer/MarginContainer/HBoxContainer" unique_id=1326801328]
+custom_minimum_size = Vector2(1, 0)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 1
+theme_override_fonts/font = ExtResource("2_dwmcq")
+theme_override_font_sizes/font_size = 50
+text = "test"
+horizontal_alignment = 1
+autowrap_mode = 2
+clip_text = true
+
+[node name="choiceboxcontainer1" type="MarginContainer" parent="." unique_id=1125591031]
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 1184.0
+offset_top = -376.0
+offset_right = -600.0
+offset_bottom = -257.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_constants/margin_left = 15
+theme_override_constants/margin_top = 15
+theme_override_constants/margin_right = 15
+theme_override_constants/margin_bottom = 15
+
+[node name="Panel" type="Panel" parent="choiceboxcontainer1" unique_id=628469911]
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_57qmd")
+
+[node name="MarginContainer" type="MarginContainer" parent="choiceboxcontainer1" unique_id=1862573262]
+layout_mode = 2
+theme_override_constants/margin_left = 15
+theme_override_constants/margin_top = 15
+theme_override_constants/margin_right = 15
+theme_override_constants/margin_bottom = 15
+
+[node name="Panel" type="Panel" parent="choiceboxcontainer1/MarginContainer" unique_id=1834974279]
+layout_mode = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="choiceboxcontainer1/MarginContainer" unique_id=1708929550]
+layout_mode = 2
+
+[node name="Label2" type="Button" parent="choiceboxcontainer1/MarginContainer/HBoxContainer" unique_id=306585168]
+custom_minimum_size = Vector2(1, 0)
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_fonts/font = ExtResource("2_dwmcq")
+theme_override_font_sizes/font_size = 50
+text = "O.1"
+autowrap_mode = 2
+clip_text = true
+
+[node name="choiceboxcontainer2" type="MarginContainer" parent="." unique_id=393227274]
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 1320.0
+offset_top = -376.0
+offset_right = -464.0
+offset_bottom = -257.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_constants/margin_left = 15
+theme_override_constants/margin_top = 15
+theme_override_constants/margin_right = 15
+theme_override_constants/margin_bottom = 15
+
+[node name="Panel" type="Panel" parent="choiceboxcontainer2" unique_id=1301380926]
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_57qmd")
+
+[node name="MarginContainer" type="MarginContainer" parent="choiceboxcontainer2" unique_id=478512357]
+layout_mode = 2
+theme_override_constants/margin_left = 15
+theme_override_constants/margin_top = 15
+theme_override_constants/margin_right = 15
+theme_override_constants/margin_bottom = 15
+
+[node name="Panel" type="Panel" parent="choiceboxcontainer2/MarginContainer" unique_id=1403480477]
+layout_mode = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="choiceboxcontainer2/MarginContainer" unique_id=394971580]
+layout_mode = 2
+
+[node name="Label2" type="Button" parent="choiceboxcontainer2/MarginContainer/HBoxContainer" unique_id=1399750730]
+custom_minimum_size = Vector2(1, 0)
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_fonts/font = ExtResource("2_dwmcq")
+theme_override_font_sizes/font_size = 50
+text = "O.2"
+autowrap_mode = 2
+clip_text = true
+
+[node name="choiceboxcontainer3" type="MarginContainer" parent="." unique_id=899984435]
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 1456.0
+offset_top = -376.0
+offset_right = -320.0
+offset_bottom = -257.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_constants/margin_left = 15
+theme_override_constants/margin_top = 15
+theme_override_constants/margin_right = 15
+theme_override_constants/margin_bottom = 15
+
+[node name="Panel" type="Panel" parent="choiceboxcontainer3" unique_id=920433299]
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_57qmd")
+
+[node name="MarginContainer" type="MarginContainer" parent="choiceboxcontainer3" unique_id=1906091292]
+layout_mode = 2
+theme_override_constants/margin_left = 15
+theme_override_constants/margin_top = 15
+theme_override_constants/margin_right = 15
+theme_override_constants/margin_bottom = 15
+
+[node name="Panel" type="Panel" parent="choiceboxcontainer3/MarginContainer" unique_id=1276958251]
+layout_mode = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="choiceboxcontainer3/MarginContainer" unique_id=689944779]
+layout_mode = 2
+
+[node name="Label2" type="Button" parent="choiceboxcontainer3/MarginContainer/HBoxContainer" unique_id=1619864343]
+custom_minimum_size = Vector2(1, 0)
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_fonts/font = ExtResource("2_dwmcq")
+theme_override_font_sizes/font_size = 50
+text = "O.3"
+autowrap_mode = 2
+clip_text = true

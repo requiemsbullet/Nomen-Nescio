@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://bhxm7dp0nl77f"]
+
+[node name="collectionmenu" type="Node2D" unique_id=1922885099]
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=982121260]
+offset_right = 1920.0
+offset_bottom = 1080.0
+color = Color(0, 0, 0, 1)
+metadata/_edit_use_anchors_ = true

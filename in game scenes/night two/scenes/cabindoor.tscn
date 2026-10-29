@@ -1,0 +1,18 @@
+[gd_scene format=3 uid="uid://bvh3dbnbm2xid"]
+
+[ext_resource type="Texture2D" uid="uid://2f28nafe0em" path="res://assets/bg/cabindoor.png" id="1_biyxi"]
+[ext_resource type="Script" uid="uid://cb7fvjf5ou52b" path="res://in game scenes/night two/scripts/cabindoor.gd" id="1_kr1eu"]
+[ext_resource type="PackedScene" uid="uid://bwon5bwco8eiw" path="res://scenes/utility/fade.tscn" id="2_kr1eu"]
+
+[node name="Cabindoor" type="Node2D" unique_id=688701317]
+script = ExtResource("1_kr1eu")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1396324673]
+
+[node name="TextureRect" type="TextureRect" parent="CanvasLayer" unique_id=1000764848]
+offset_right = 1920.0
+offset_bottom = 1080.0
+texture = ExtResource("1_biyxi")
+metadata/_edit_use_anchors_ = true
+
+[node name="fade" parent="." unique_id=1333505389 instance=ExtResource("2_kr1eu")]

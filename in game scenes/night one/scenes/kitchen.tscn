@@ -1,0 +1,18 @@
+[gd_scene format=3 uid="uid://86lswoq5fnho"]
+
+[ext_resource type="Script" uid="uid://bubqft61ekxa5" path="res://in game scenes/night one/scripts/kitchen.gd" id="1_apedm"]
+[ext_resource type="Texture2D" uid="uid://dpwjhtuw2cms3" path="res://assets/bg/kitchen.png" id="1_x5jc0"]
+[ext_resource type="PackedScene" uid="uid://bwon5bwco8eiw" path="res://scenes/utility/fade.tscn" id="2_apedm"]
+
+[node name="Kitchen" type="Node2D" unique_id=1933771826]
+script = ExtResource("1_apedm")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=983662093]
+
+[node name="TextureRect" type="TextureRect" parent="CanvasLayer" unique_id=201757846]
+offset_right = 1920.0
+offset_bottom = 1080.0
+texture = ExtResource("1_x5jc0")
+metadata/_edit_use_anchors_ = true
+
+[node name="fade" parent="." unique_id=1333505389 instance=ExtResource("2_apedm")]

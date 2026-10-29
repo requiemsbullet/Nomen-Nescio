@@ -1,0 +1,266 @@
+[gd_scene format=3 uid="uid://b2d405fu6krn0"]
+
+[ext_resource type="Script" uid="uid://bj1hllgvauhld" path="res://in game scenes/night one/scripts/brchoicemenu.gd" id="1_q1igj"]
+[ext_resource type="Texture2D" uid="uid://mdvxu3hpmtux" path="res://assets/bg/bathrooms.png" id="2_q1igj"]
+[ext_resource type="FontFile" uid="uid://bqfo3k1vpm5id" path="res://assets/fonts/Pixel Operator/PixelOperator-Bold.ttf" id="3_cimxb"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_gm5mh"]
+bg_color = Color(0, 0, 0, 1)
+border_width_left = 4
+border_width_top = 4
+border_width_right = 4
+border_width_bottom = 4
+
+[node name="Brchoicemenu" type="Node2D" unique_id=242393864]
+script = ExtResource("1_q1igj")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=779110032]
+
+[node name="TextureRect" type="TextureRect" parent="CanvasLayer" unique_id=1485421734]
+offset_right = 1920.0
+offset_bottom = 1080.0
+texture = ExtResource("2_q1igj")
+metadata/_edit_use_anchors_ = true
+
+[node name="CanvasLayer2" type="CanvasLayer" parent="." unique_id=1012510837]
+layer = 10
+
+[node name="textboxcontainer" type="MarginContainer" parent="CanvasLayer2" unique_id=754394559]
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 320.0
+offset_top = -280.0
+offset_right = -320.0
+offset_bottom = -32.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_constants/margin_left = 15
+theme_override_constants/margin_top = 15
+theme_override_constants/margin_right = 15
+theme_override_constants/margin_bottom = 15
+
+[node name="Panel" type="Panel" parent="CanvasLayer2/textboxcontainer" unique_id=2042618323]
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_gm5mh")
+
+[node name="MarginContainer" type="MarginContainer" parent="CanvasLayer2/textboxcontainer" unique_id=1467674807]
+layout_mode = 2
+theme_override_constants/margin_left = 15
+theme_override_constants/margin_top = 15
+theme_override_constants/margin_right = 15
+theme_override_constants/margin_bottom = 15
+
+[node name="Panel" type="Panel" parent="CanvasLayer2/textboxcontainer/MarginContainer" unique_id=1034462519]
+layout_mode = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="CanvasLayer2/textboxcontainer/MarginContainer" unique_id=1242006069]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="CanvasLayer2/textboxcontainer/MarginContainer/HBoxContainer" unique_id=150211319]
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0
+theme_override_fonts/font = ExtResource("3_cimxb")
+theme_override_font_sizes/font_size = 50
+text = "`"
+
+[node name="Label2" type="Label" parent="CanvasLayer2/textboxcontainer/MarginContainer/HBoxContainer" unique_id=2020646038]
+custom_minimum_size = Vector2(1, 0)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 1
+theme_override_fonts/font = ExtResource("3_cimxb")
+theme_override_font_sizes/font_size = 42
+text = "so what will you take?
+	0.1 the string
+	0.2 the match
+	0.3 the candle."
+autowrap_mode = 2
+clip_text = true
+
+[node name="Label3" type="Label" parent="CanvasLayer2/textboxcontainer/MarginContainer/HBoxContainer" unique_id=101156364]
+layout_mode = 2
+size_flags_vertical = 8
+theme_override_fonts/font = ExtResource("3_cimxb")
+theme_override_font_sizes/font_size = 50
+text = "*"
+
+[node name="nameboxcontainer" type="MarginContainer" parent="CanvasLayer2" unique_id=1521770745]
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 320.0
+offset_top = -368.0
+offset_right = -1392.0
+offset_bottom = -257.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_constants/margin_left = 15
+theme_override_constants/margin_top = 15
+theme_override_constants/margin_right = 15
+theme_override_constants/margin_bottom = 15
+
+[node name="Panel" type="Panel" parent="CanvasLayer2/nameboxcontainer" unique_id=646034455]
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_gm5mh")
+
+[node name="MarginContainer" type="MarginContainer" parent="CanvasLayer2/nameboxcontainer" unique_id=932653376]
+layout_mode = 2
+theme_override_constants/margin_left = 15
+theme_override_constants/margin_top = 15
+theme_override_constants/margin_right = 15
+theme_override_constants/margin_bottom = 15
+
+[node name="Panel" type="Panel" parent="CanvasLayer2/nameboxcontainer/MarginContainer" unique_id=691163434]
+layout_mode = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="CanvasLayer2/nameboxcontainer/MarginContainer" unique_id=1968013107]
+layout_mode = 2
+
+[node name="Label2" type="Label" parent="CanvasLayer2/nameboxcontainer/MarginContainer/HBoxContainer" unique_id=1210699827]
+custom_minimum_size = Vector2(1, 0)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 1
+theme_override_fonts/font = ExtResource("3_cimxb")
+theme_override_font_sizes/font_size = 50
+text = "???"
+horizontal_alignment = 1
+autowrap_mode = 2
+clip_text = true
+
+[node name="choiceboxcontainer1" type="MarginContainer" parent="CanvasLayer2" unique_id=754625815]
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 1184.0
+offset_top = -376.0
+offset_right = -600.0
+offset_bottom = -257.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_constants/margin_left = 15
+theme_override_constants/margin_top = 15
+theme_override_constants/margin_right = 15
+theme_override_constants/margin_bottom = 15
+
+[node name="Panel" type="Panel" parent="CanvasLayer2/choiceboxcontainer1" unique_id=1231276931]
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_gm5mh")
+
+[node name="MarginContainer" type="MarginContainer" parent="CanvasLayer2/choiceboxcontainer1" unique_id=1337779832]
+layout_mode = 2
+theme_override_constants/margin_left = 15
+theme_override_constants/margin_top = 15
+theme_override_constants/margin_right = 15
+theme_override_constants/margin_bottom = 15
+
+[node name="Panel" type="Panel" parent="CanvasLayer2/choiceboxcontainer1/MarginContainer" unique_id=1383335925]
+layout_mode = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="CanvasLayer2/choiceboxcontainer1/MarginContainer" unique_id=855659183]
+layout_mode = 2
+
+[node name="Label2" type="Button" parent="CanvasLayer2/choiceboxcontainer1/MarginContainer/HBoxContainer" unique_id=1569631826]
+custom_minimum_size = Vector2(1, 0)
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_fonts/font = ExtResource("3_cimxb")
+theme_override_font_sizes/font_size = 50
+text = "O.1"
+autowrap_mode = 2
+clip_text = true
+
+[node name="choiceboxcontainer2" type="MarginContainer" parent="CanvasLayer2" unique_id=1263840607]
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 1320.0
+offset_top = -376.0
+offset_right = -464.0
+offset_bottom = -257.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_constants/margin_left = 15
+theme_override_constants/margin_top = 15
+theme_override_constants/margin_right = 15
+theme_override_constants/margin_bottom = 15
+
+[node name="Panel" type="Panel" parent="CanvasLayer2/choiceboxcontainer2" unique_id=2136141942]
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_gm5mh")
+
+[node name="MarginContainer" type="MarginContainer" parent="CanvasLayer2/choiceboxcontainer2" unique_id=807233843]
+layout_mode = 2
+theme_override_constants/margin_left = 15
+theme_override_constants/margin_top = 15
+theme_override_constants/margin_right = 15
+theme_override_constants/margin_bottom = 15
+
+[node name="Panel" type="Panel" parent="CanvasLayer2/choiceboxcontainer2/MarginContainer" unique_id=55997380]
+layout_mode = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="CanvasLayer2/choiceboxcontainer2/MarginContainer" unique_id=1797984]
+layout_mode = 2
+
+[node name="Label2" type="Button" parent="CanvasLayer2/choiceboxcontainer2/MarginContainer/HBoxContainer" unique_id=782894637]
+custom_minimum_size = Vector2(1, 0)
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_fonts/font = ExtResource("3_cimxb")
+theme_override_font_sizes/font_size = 50
+text = "O.2"
+autowrap_mode = 2
+clip_text = true
+
+[node name="choiceboxcontainer3" type="MarginContainer" parent="CanvasLayer2" unique_id=1696018845]
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 1456.0
+offset_top = -376.0
+offset_right = -320.0
+offset_bottom = -257.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_constants/margin_left = 15
+theme_override_constants/margin_top = 15
+theme_override_constants/margin_right = 15
+theme_override_constants/margin_bottom = 15
+
+[node name="Panel" type="Panel" parent="CanvasLayer2/choiceboxcontainer3" unique_id=1762848420]
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_gm5mh")
+
+[node name="MarginContainer" type="MarginContainer" parent="CanvasLayer2/choiceboxcontainer3" unique_id=763850359]
+layout_mode = 2
+theme_override_constants/margin_left = 15
+theme_override_constants/margin_top = 15
+theme_override_constants/margin_right = 15
+theme_override_constants/margin_bottom = 15
+
+[node name="Panel" type="Panel" parent="CanvasLayer2/choiceboxcontainer3/MarginContainer" unique_id=1127645653]
+layout_mode = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="CanvasLayer2/choiceboxcontainer3/MarginContainer" unique_id=910778441]
+layout_mode = 2
+
+[node name="Label2" type="Button" parent="CanvasLayer2/choiceboxcontainer3/MarginContainer/HBoxContainer" unique_id=1284038804]
+custom_minimum_size = Vector2(1, 0)
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_fonts/font = ExtResource("3_cimxb")
+theme_override_font_sizes/font_size = 50
+text = "O.3"
+autowrap_mode = 2
+clip_text = true
+
+[connection signal="pressed" from="CanvasLayer2/choiceboxcontainer1/MarginContainer/HBoxContainer/Label2" to="." method="_on_label_1_pressed"]
+[connection signal="pressed" from="CanvasLayer2/choiceboxcontainer2/MarginContainer/HBoxContainer/Label2" to="." method="_on_label_2_pressed"]
+[connection signal="pressed" from="CanvasLayer2/choiceboxcontainer3/MarginContainer/HBoxContainer/Label2" to="." method="_on_label_3_pressed"]

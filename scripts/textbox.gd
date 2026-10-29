@@ -8,6 +8,22 @@ var waiting_for_click = false
 var text_speed = 0.05
 var tween = null
 
+var story_variables = {
+	"candle": false,
+	"string": false,
+	"match": false,
+	"key": false,
+	"mirror": false,
+	"photograph": false,
+	"bell": false,
+	"needle": false,
+	"bottle": false,
+	"clock": false,
+	"mask": false,
+	"paper": false,
+	"noteread": false
+}
+
 @onready var tbc = $textboxcontainer
 @onready var start = $textboxcontainer/MarginContainer/HBoxContainer/Label
 @onready var tb = $textboxcontainer/MarginContainer/HBoxContainer/Label2

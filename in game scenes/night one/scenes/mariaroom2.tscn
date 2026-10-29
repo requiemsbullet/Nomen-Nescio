@@ -1,0 +1,18 @@
+[gd_scene format=3 uid="uid://lnjakyeynfim"]
+
+[ext_resource type="Script" uid="uid://de46ilxj3jov" path="res://in game scenes/night one/scripts/mariaroom_2.gd" id="1_v1125"]
+[ext_resource type="Texture2D" uid="uid://bxel2buydps7g" path="res://assets/bg/mariebed.png" id="2_tayrx"]
+[ext_resource type="PackedScene" uid="uid://bwon5bwco8eiw" path="res://scenes/utility/fade.tscn" id="3_ny6j5"]
+
+[node name="Mariaroom" type="Node2D" unique_id=850392186]
+script = ExtResource("1_v1125")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=328671184]
+
+[node name="TextureRect" type="TextureRect" parent="CanvasLayer" unique_id=1745418957]
+offset_right = 1920.0
+offset_bottom = 1080.0
+texture = ExtResource("2_tayrx")
+metadata/_edit_use_anchors_ = true
+
+[node name="fade" parent="." unique_id=1333505389 instance=ExtResource("3_ny6j5")]

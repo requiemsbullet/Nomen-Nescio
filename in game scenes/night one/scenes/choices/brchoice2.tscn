@@ -1,0 +1,18 @@
+[gd_scene format=3 uid="uid://dk83re16jpqfu"]
+
+[ext_resource type="Script" uid="uid://dvnfa7ea0j4ik" path="res://in game scenes/night one/scripts/brchoice_2.gd" id="1_06pa6"]
+[ext_resource type="Texture2D" uid="uid://mdvxu3hpmtux" path="res://assets/bg/bathrooms.png" id="1_m8cpq"]
+[ext_resource type="PackedScene" uid="uid://bwon5bwco8eiw" path="res://scenes/utility/fade.tscn" id="2_06pa6"]
+
+[node name="Brchoice1" type="Node2D" unique_id=1890248194]
+script = ExtResource("1_06pa6")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=308252002]
+
+[node name="TextureRect" type="TextureRect" parent="CanvasLayer" unique_id=497765520]
+offset_right = 1920.0
+offset_bottom = 1080.0
+texture = ExtResource("1_m8cpq")
+metadata/_edit_use_anchors_ = true
+
+[node name="fade" parent="." unique_id=1333505389 instance=ExtResource("2_06pa6")]

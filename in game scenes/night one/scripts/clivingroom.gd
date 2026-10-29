@@ -26,7 +26,10 @@ func start_room_dialogue() -> void:
 	DialogueManager.queue_dialogue("maria", "...")
 	DialogueManager.queue_dialogue("maria", "today, it's too quiet. it's too cold.")
 	DialogueManager.queue_dialogue("maria", "it's waiting for me.")
+	DialogueManager.queue_dialogue("maria", "where should i explore first?
+	0.1 . the kitchen
+	0.2 . the bathroom
+	0.3 . the bedroom")
 	
 func _on_dialogue_finished() -> void:
-	await fade.fade(1.0, 0.5).finished
-	get_tree().call_deferred("change_scene_to_file", "res://scenes/utility/menu.tscn")
+	get_tree().call_deferred("change_scene_to_file", "res://in game scenes/night one/scenes/clivingroomc.tscn")

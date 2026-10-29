@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://w3lk3qkwdj01"]
 
 [ext_resource type="FontFile" uid="uid://bqfo3k1vpm5id" path="res://assets/fonts/Pixel Operator/PixelOperator-Bold.ttf" id="1_bh4ci"]
+[ext_resource type="Script" uid="uid://d3f6iovoled24" path="res://scripts/inventory.gd" id="1_fcc0i"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_57qmd"]
 bg_color = Color(0, 0, 0, 1)
@@ -9,15 +10,22 @@ border_width_top = 4
 border_width_right = 4
 border_width_bottom = 4
 
-[node name="textbox" type="CanvasLayer" unique_id=1473888032]
+[node name="inventory" type="CanvasLayer" unique_id=1473888032]
+process_mode = 3
 layer = 100
+script = ExtResource("1_fcc0i")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=1266805989]
+offset_right = 1920.0
+offset_bottom = 1080.0
+color = Color(0, 0, 0, 0.4509804)
 
 [node name="textboxcontainer" type="MarginContainer" parent="." unique_id=1415016996]
 anchors_preset = 12
 anchor_top = 1.0
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_left = 336.0
+offset_left = 304.0
 offset_top = -624.0
 offset_right = -304.0
 offset_bottom = -376.0
@@ -148,10 +156,10 @@ anchors_preset = 12
 anchor_top = 1.0
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_left = 800.0
-offset_top = -543.0
-offset_right = -976.0
-offset_bottom = -424.0
+offset_left = 784.0
+offset_top = -544.0
+offset_right = -992.0
+offset_bottom = -425.0
 grow_horizontal = 2
 grow_vertical = 0
 theme_override_constants/margin_left = 15

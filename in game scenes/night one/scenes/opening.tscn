@@ -1,0 +1,22 @@
+[gd_scene format=3 uid="uid://bvd45shroui7"]
+
+[ext_resource type="Script" uid="uid://bx80fdwx86d00" path="res://in game scenes/night one/scripts/opening.gd" id="1_dnw14"]
+[ext_resource type="FontFile" uid="uid://bqfo3k1vpm5id" path="res://assets/fonts/Pixel Operator/PixelOperator-Bold.ttf" id="1_nn0ng"]
+
+[node name="Opening" type="Node2D" unique_id=899085445]
+script = ExtResource("1_dnw14")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=706266794]
+offset_right = 1920.0
+offset_bottom = 1080.0
+color = Color(0, 0, 0, 1)
+metadata/_edit_use_anchors_ = true
+
+[node name="Label" type="Label" parent="." unique_id=530658869]
+offset_right = 1920.0
+offset_bottom = 1080.0
+theme_override_fonts/font = ExtResource("1_nn0ng")
+theme_override_font_sizes/font_size = 360
+text = "NIGHT ONE"
+horizontal_alignment = 1
+vertical_alignment = 1

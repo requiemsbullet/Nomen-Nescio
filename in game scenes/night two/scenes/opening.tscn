@@ -1,0 +1,22 @@
+[gd_scene format=3 uid="uid://sqn57t1j0vod"]
+
+[ext_resource type="Script" uid="uid://ctcemqm3cye1g" path="res://in game scenes/night two/scripts/opening.gd" id="1_ngt03"]
+[ext_resource type="FontFile" uid="uid://bqfo3k1vpm5id" path="res://assets/fonts/Pixel Operator/PixelOperator-Bold.ttf" id="2_mgqme"]
+
+[node name="Opening" type="Node2D" unique_id=753399179]
+script = ExtResource("1_ngt03")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=374646051]
+offset_right = 1920.0
+offset_bottom = 1080.0
+color = Color(0, 0, 0, 1)
+metadata/_edit_use_anchors_ = true
+
+[node name="Label" type="Label" parent="." unique_id=1076417222]
+offset_right = 1920.0
+offset_bottom = 1080.0
+theme_override_fonts/font = ExtResource("2_mgqme")
+theme_override_font_sizes/font_size = 360
+text = "NIGHT TWO"
+horizontal_alignment = 1
+vertical_alignment = 1

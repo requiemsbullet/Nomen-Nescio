@@ -22,4 +22,5 @@ func start_room_dialogue() -> void:
 	DialogueManager.queue_dialogue("maria", "and most importantly, who is sylvan?")
 
 func _on_dialogue_finished() -> void:
-	get_tree().call_deferred("change_scene_to_file", "res://in game scenes/night one/scenes/cabindoor.tscn")
+	await fade.fade(1.0, 2.0).finished
+	get_tree().call_deferred("change_scene_to_file", "res://in game scenes/night two/scenes/cabindoor.tscn")

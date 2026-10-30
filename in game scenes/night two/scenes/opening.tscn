@@ -20,3 +20,14 @@ theme_override_font_sizes/font_size = 360
 text = "NIGHT TWO"
 horizontal_alignment = 1
 vertical_alignment = 1
+
+[node name="Label2" type="Label" parent="." unique_id=721251218]
+offset_left = 1488.0
+offset_top = 1016.0
+offset_right = 1902.0
+offset_bottom = 1060.0
+theme_override_fonts/font = ExtResource("2_mgqme")
+theme_override_font_sizes/font_size = 40
+text = "press enter to continue"
+horizontal_alignment = 1
+vertical_alignment = 1

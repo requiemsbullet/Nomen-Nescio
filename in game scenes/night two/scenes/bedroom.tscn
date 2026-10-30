@@ -1,0 +1,21 @@
+[gd_scene format=3 uid="uid://bjjwyytal0msm"]
+
+[ext_resource type="Texture2D" uid="uid://sv5xpo5716uj" path="res://assets/bg/bedroom.png" id="1_07dj2"]
+[ext_resource type="Script" uid="uid://cn80ajfy2ko37" path="res://in game scenes/night two/scripts/bedroom.gd" id="1_63f6y"]
+[ext_resource type="PackedScene" uid="uid://bwon5bwco8eiw" path="res://scenes/utility/fade.tscn" id="2_63f6y"]
+[ext_resource type="PackedScene" uid="uid://w3lk3qkwdj01" path="res://scenes/utility/inventory.tscn" id="4_570w4"]
+
+[node name="Bedroom" type="Node2D" unique_id=966024421]
+script = ExtResource("1_63f6y")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=668039750]
+
+[node name="TextureRect" type="TextureRect" parent="CanvasLayer" unique_id=1956123397]
+offset_right = 1920.0
+offset_bottom = 1080.0
+texture = ExtResource("1_07dj2")
+metadata/_edit_use_anchors_ = true
+
+[node name="fade" parent="." unique_id=1333505389 instance=ExtResource("2_63f6y")]
+
+[node name="inventory" parent="." unique_id=1473888032 instance=ExtResource("4_570w4")]

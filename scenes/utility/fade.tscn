@@ -3,9 +3,11 @@
 [ext_resource type="Script" uid="uid://dn16n5cqnk4h0" path="res://scripts/fade.gd" id="1_huc1g"]
 
 [node name="fade" type="CanvasLayer" unique_id=1333505389]
+layer = 10000
 script = ExtResource("1_huc1g")
 
 [node name="ColorRect" type="ColorRect" parent="." unique_id=1633751198]
+process_priority = 10000
 offset_right = 1920.0
 offset_bottom = 1080.0
 mouse_filter = 2

@@ -1,16 +1,54 @@
 [gd_scene format=3 uid="uid://0bk0lve47xh4"]
 
 [ext_resource type="Script" uid="uid://b5m58t6uyontp" path="res://scripts/mainmenu.gd" id="1_y1yol"]
+[ext_resource type="Texture2D" uid="uid://dg12jiph6ilxp" path="res://assets/bg/menubg.png" id="2_cg4o0"]
+[ext_resource type="FontFile" uid="uid://bqfo3k1vpm5id" path="res://assets/fonts/Pixel Operator/PixelOperator-Bold.ttf" id="2_hpgnk"]
 [ext_resource type="PackedScene" uid="uid://bwon5bwco8eiw" path="res://scenes/utility/fade.tscn" id="2_yun6s"]
+[ext_resource type="AudioStream" uid="uid://cjrbepgmd1qcb" path="res://assets/music/mainmenu.wav" id="5_l1drq"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_yf5fn"]
+bg_color = Color(0, 0, 0, 1)
+border_width_left = 4
+border_width_top = 4
+border_width_right = 4
+border_width_bottom = 4
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_57qmd"]
+bg_color = Color(0, 0, 0, 1)
+border_width_left = 4
+border_width_top = 4
+border_width_right = 4
+border_width_bottom = 4
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_d0u6y"]
+bg_color = Color(0, 0, 0, 1)
+border_width_left = 4
+border_width_top = 4
+border_width_right = 4
+border_width_bottom = 4
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_3gngh"]
+bg_color = Color(0, 0, 0, 1)
+border_width_left = 4
+border_width_top = 4
+border_width_right = 4
+border_width_bottom = 4
 
 [node name="mainmenu" type="Node2D" unique_id=1599525125]
 script = ExtResource("1_y1yol")
 
-[node name="ColorRect" type="ColorRect" parent="." unique_id=1289710747]
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=708207630]
+stream = ExtResource("5_l1drq")
+volume_db = -23.077
+autoplay = true
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1737814003]
+layer = -1
+
+[node name="TextureRect" type="TextureRect" parent="CanvasLayer" unique_id=1515625602]
 offset_right = 1920.0
 offset_bottom = 1080.0
-color = Color(0, 0, 0, 1)
-metadata/_edit_use_anchors_ = true
+texture = ExtResource("2_cg4o0")
 
 [node name="buttonmanager" type="Control" parent="." unique_id=1975145548]
 layout_mode = 3
@@ -22,42 +60,114 @@ offset_bottom = 288.0
 metadata/_edit_use_anchors_ = true
 
 [node name="play" type="Button" parent="buttonmanager" unique_id=1387736922]
-layout_mode = 0
+layout_mode = 1
+anchors_preset = -1
+anchor_top = -0.2
+anchor_right = 1.225
+anchor_bottom = -0.2
 offset_left = 16.0
 offset_top = 176.0
 offset_right = 351.0
 offset_bottom = 264.0
+theme_override_fonts/font = ExtResource("2_hpgnk")
+theme_override_font_sizes/font_size = 55
+theme_override_styles/normal = SubResource("StyleBoxFlat_yf5fn")
 text = "start game"
 metadata/_edit_use_anchors_ = true
 
 [node name="options" type="Button" parent="buttonmanager" unique_id=539712880]
-layout_mode = 0
+layout_mode = 1
+anchors_preset = -1
+anchor_top = -0.2
+anchor_right = 1.225
+anchor_bottom = -0.2
 offset_left = 16.0
 offset_top = 304.0
 offset_right = 351.0
 offset_bottom = 392.0
+theme_override_fonts/font = ExtResource("2_hpgnk")
+theme_override_font_sizes/font_size = 55
+theme_override_styles/normal = SubResource("StyleBoxFlat_57qmd")
 text = "settings"
 metadata/_edit_use_anchors_ = true
 
 [node name="information" type="Button" parent="buttonmanager" unique_id=540447838]
-layout_mode = 0
+layout_mode = 1
+anchors_preset = -1
+anchor_top = -0.2
+anchor_right = 1.225
+anchor_bottom = -0.2
 offset_left = 16.0
 offset_top = 432.0
 offset_right = 351.0
 offset_bottom = 520.0
+theme_override_fonts/font = ExtResource("2_hpgnk")
+theme_override_font_sizes/font_size = 55
+theme_override_styles/normal = SubResource("StyleBoxFlat_d0u6y")
 text = "information"
 metadata/_edit_use_anchors_ = true
 
 [node name="quit" type="Button" parent="buttonmanager" unique_id=1958907344]
-layout_mode = 0
+layout_mode = 1
+anchors_preset = -1
+anchor_top = -0.2
+anchor_right = 1.225
+anchor_bottom = -0.2
 offset_left = 16.0
 offset_top = 560.0
 offset_right = 351.0
 offset_bottom = 648.0
+theme_override_fonts/font = ExtResource("2_hpgnk")
+theme_override_font_sizes/font_size = 55
+theme_override_styles/normal = SubResource("StyleBoxFlat_3gngh")
 text = "quit"
 metadata/_edit_use_anchors_ = true
 
+[node name="minigame" type="Button" parent="buttonmanager" unique_id=226391242]
+layout_mode = 1
+anchors_preset = -1
+anchor_top = 12.6
+anchor_right = 1.225
+anchor_bottom = 12.6
+offset_left = 16.0
+offset_top = 176.0
+offset_right = 351.0
+offset_bottom = 264.0
+theme_override_fonts/font = ExtResource("2_hpgnk")
+theme_override_font_sizes/font_size = 55
+theme_override_styles/normal = SubResource("StyleBoxFlat_yf5fn")
+text = "extra"
+metadata/_edit_use_anchors_ = true
+
+[node name="Label" type="Label" parent="." unique_id=1843263924]
+offset_left = 48.0
+offset_top = -176.0
+offset_right = 1695.0
+offset_bottom = 472.0
+theme_override_fonts/font = ExtResource("2_hpgnk")
+theme_override_font_sizes/font_size = 244
+text = "NOMEN NESCIO"
+vertical_alignment = 1
+
+[node name="Label2" type="Label" parent="." unique_id=1965692072]
+visible = false
+offset_left = 64.0
+offset_top = 144.0
+offset_right = 1421.0
+offset_bottom = 389.0
+theme_override_fonts/font = ExtResource("2_hpgnk")
+theme_override_font_sizes/font_size = 54
+text = "revamped for savepoint 2026 by requiemsbullet."
+vertical_alignment = 1
+
 [node name="fade" parent="." unique_id=1333505389 instance=ExtResource("2_yun6s")]
+visible = false
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=1293913680]
+offset_left = 64.0
+offset_top = 232.0
+offset_right = 1376.0
+offset_bottom = 240.0
 
 [connection signal="pressed" from="buttonmanager/play" to="." method="_on_play_pressed"]
 [connection signal="pressed" from="buttonmanager/options" to="." method="_on_options_pressed"]

@@ -1,3 +1,57 @@
 [gd_scene format=3 uid="uid://bgcohqwldbbi6"]
 
+[ext_resource type="Script" uid="uid://pnedg32emo0v" path="res://scripts/settings.gd" id="1_ng18a"]
+[ext_resource type="FontFile" uid="uid://bqfo3k1vpm5id" path="res://assets/fonts/Pixel Operator/PixelOperator-Bold.ttf" id="2_mncfx"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_5le1r"]
+bg_color = Color(0, 0, 0, 1)
+border_width_left = 4
+border_width_top = 4
+border_width_right = 4
+border_width_bottom = 4
+border_color = Color(1, 1, 1, 1)
+
 [node name="settings" type="Node2D" unique_id=551525536]
+script = ExtResource("1_ng18a")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=2126953338]
+offset_right = 1920.0
+offset_bottom = 1080.0
+color = Color(0, 0, 0, 1)
+metadata/_edit_use_anchors_ = true
+
+[node name="Label" type="Label" parent="ColorRect" unique_id=530691520]
+layout_mode = 0
+offset_left = 128.0
+offset_top = 24.0
+offset_right = 1792.0
+offset_bottom = 152.0
+theme_override_fonts/font = ExtResource("2_mncfx")
+theme_override_font_sizes/font_size = 125
+text = "SETTINGS MENU"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Label" type="Label" parent="ColorRect/Label" unique_id=365627940]
+layout_mode = 0
+offset_left = -8.0
+offset_top = 96.0
+offset_right = 1656.0
+offset_bottom = 224.0
+theme_override_fonts/font = ExtResource("2_mncfx")
+theme_override_font_sizes/font_size = 125
+text = "WORK IN PROGRESS"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Button" type="Button" parent="." unique_id=1859107212]
+offset_left = 640.0
+offset_top = 952.0
+offset_right = 1280.0
+offset_bottom = 1024.0
+theme_override_fonts/font = ExtResource("2_mncfx")
+theme_override_font_sizes/font_size = 62
+theme_override_styles/normal = SubResource("StyleBoxFlat_5le1r")
+text = "RETURN TO MENU"
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

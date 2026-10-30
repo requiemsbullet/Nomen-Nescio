@@ -3,6 +3,7 @@
 [ext_resource type="Texture2D" uid="uid://2f28nafe0em" path="res://assets/bg/cabindoor.png" id="1_biyxi"]
 [ext_resource type="Script" uid="uid://cb7fvjf5ou52b" path="res://in game scenes/night two/scripts/cabindoor.gd" id="1_kr1eu"]
 [ext_resource type="PackedScene" uid="uid://bwon5bwco8eiw" path="res://scenes/utility/fade.tscn" id="2_kr1eu"]
+[ext_resource type="PackedScene" uid="uid://w3lk3qkwdj01" path="res://scenes/utility/inventory.tscn" id="4_c5uk5"]
 
 [node name="Cabindoor" type="Node2D" unique_id=688701317]
 script = ExtResource("1_kr1eu")
@@ -16,3 +17,5 @@ texture = ExtResource("1_biyxi")
 metadata/_edit_use_anchors_ = true
 
 [node name="fade" parent="." unique_id=1333505389 instance=ExtResource("2_kr1eu")]
+
+[node name="inventory" parent="." unique_id=1473888032 instance=ExtResource("4_c5uk5")]

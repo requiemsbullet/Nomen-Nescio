@@ -1,8 +1,6 @@
 extends Node2D
 @onready var fade: CanvasLayer = $fade
-
-func _ready() -> void:
-	pass 
+@onready var menu_music: AudioStreamPlayer = $AudioStreamPlayer
 
 func _process(_delta: float) -> void:
 	pass
@@ -10,6 +8,7 @@ func _process(_delta: float) -> void:
 
 func _on_play_pressed():
 	await fade.fade(1.0, 0.5).finished
+	menu_music.stop()
 	get_tree().change_scene_to_file("res://in game scenes/night one/scenes/opening.tscn")
 
 func _on_options_pressed():

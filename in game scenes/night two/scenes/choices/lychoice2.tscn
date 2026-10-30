@@ -1,0 +1,21 @@
+[gd_scene format=3 uid="uid://dv8h1n8bj5jtb"]
+
+[ext_resource type="PackedScene" uid="uid://w3lk3qkwdj01" path="res://scenes/utility/inventory.tscn" id="1_07t0b"]
+[ext_resource type="Script" uid="uid://q0s7ha07d7ns" path="res://in game scenes/night two/scripts/lychoice_2.gd" id="1_674aj"]
+[ext_resource type="Texture2D" uid="uid://2nfhm0da5haf" path="res://assets/bg/laundrys.png" id="2_qybdm"]
+[ext_resource type="PackedScene" uid="uid://bwon5bwco8eiw" path="res://scenes/utility/fade.tscn" id="4_5xt1u"]
+
+[node name="Lychoice2" type="Node2D" unique_id=2084179030]
+script = ExtResource("1_674aj")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=577975119]
+
+[node name="TextureRect" type="TextureRect" parent="CanvasLayer" unique_id=1996424590]
+offset_right = 1920.0
+offset_bottom = 1080.0
+texture = ExtResource("2_qybdm")
+metadata/_edit_use_anchors_ = true
+
+[node name="inventory" parent="." unique_id=1473888032 instance=ExtResource("1_07t0b")]
+
+[node name="fade" parent="." unique_id=1333505389 instance=ExtResource("4_5xt1u")]

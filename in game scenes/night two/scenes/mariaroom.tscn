@@ -3,6 +3,7 @@
 [ext_resource type="Script" uid="uid://d15yb6yp0ctsn" path="res://in game scenes/night two/scripts/mariaroom.gd" id="1_qatf4"]
 [ext_resource type="Texture2D" uid="uid://bxel2buydps7g" path="res://assets/bg/mariebed.png" id="2_fj3sb"]
 [ext_resource type="PackedScene" uid="uid://bwon5bwco8eiw" path="res://scenes/utility/fade.tscn" id="3_r4u4k"]
+[ext_resource type="PackedScene" uid="uid://w3lk3qkwdj01" path="res://scenes/utility/inventory.tscn" id="4_tayrx"]
 
 [node name="Mariaroom" type="Node2D" unique_id=357899815]
 script = ExtResource("1_qatf4")
@@ -16,3 +17,5 @@ texture = ExtResource("2_fj3sb")
 metadata/_edit_use_anchors_ = true
 
 [node name="fade" parent="." unique_id=1333505389 instance=ExtResource("3_r4u4k")]
+
+[node name="inventory" parent="." unique_id=1473888032 instance=ExtResource("4_tayrx")]

@@ -22,4 +22,4 @@ func start_room_dialogue() -> void:
 	
 func _on_dialogue_finished() -> void:
 	await fade.fade(1.0, 0.5).finished
-	get_tree().call_deferred("change_scene_to_file", "res://in game scenes/night one/scenes/cabindoor.tscn")
+	get_tree().call_deferred("change_scene_to_file", "res://in game scenes/night two/scenes/livingroom.tscn")

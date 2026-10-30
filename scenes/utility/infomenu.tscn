@@ -71,34 +71,28 @@ i - open inventory , observe items retrieved [ wip , non init ]
 each story told in nomen nescio has a reason. when making your choices, remind yourself of the fate of the traveller. "
 autowrap_mode = 1
 
-[node name="Label3" type="Label" parent="Label2" unique_id=17076256]
+[node name="Label3" type="Label" parent="Label2" unique_id=354849892]
 custom_minimum_size = Vector2(1, 0)
 layout_mode = 0
-offset_left = 104.0
-offset_top = 152.0
-offset_right = 1816.0
-offset_bottom = 311.0
+offset_left = 1232.0
+offset_top = -136.0
+offset_right = 1288.0
+offset_bottom = -2.0
 theme_override_fonts/font = ExtResource("2_t2ujj")
 theme_override_font_sizes/font_size = 50
-text = "Nomen Nescio is a visual novel puzzle game written in the perspective of Maria, a woman who has been experiencing the same dream time and time again. But now, she may not be the only one within these dreams..."
-horizontal_alignment = 1
-vertical_alignment = 1
+text = "ꨄ︎"
 autowrap_mode = 1
 
-[node name="Label2" type="Label" parent="Label2/Label3" unique_id=486137431]
+[node name="Label4" type="Label" parent="Label2" unique_id=51125724]
 custom_minimum_size = Vector2(1, 0)
 layout_mode = 0
-offset_left = 8.0
-offset_top = 392.0
-offset_right = 1720.0
-offset_bottom = 551.0
+offset_left = 432.0
+offset_top = -136.0
+offset_right = 488.0
+offset_bottom = -2.0
 theme_override_fonts/font = ExtResource("2_t2ujj")
 theme_override_font_sizes/font_size = 50
-text = "enter - progress within dialogue and between scenes
-escape - pause the game , open up in game settings menu [ wip , non init ]
-i - open inventory , observe items retrieved [ wip , non init ]
-
-each story told in nomen nescio has a reason. when making your choices, remind yourself of the fate of the traveller. "
+text = "ꨄ︎"
 autowrap_mode = 1
 
 [node name="ColorRect2" type="ColorRect" parent="." unique_id=612319554]

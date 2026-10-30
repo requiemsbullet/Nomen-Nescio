@@ -1,0 +1,18 @@
+[gd_scene format=3 uid="uid://ldjs3c7g0kb0"]
+
+[ext_resource type="Script" uid="uid://d1wxebsi5gppy" path="res://in game scenes/night three/scripts/mariaroom.gd" id="1_8nfi5"]
+[ext_resource type="Texture2D" uid="uid://bxel2buydps7g" path="res://assets/bg/mariebed.png" id="2_l3u63"]
+[ext_resource type="PackedScene" uid="uid://bwon5bwco8eiw" path="res://scenes/utility/fade.tscn" id="3_06ite"]
+
+[node name="Mariaroom" type="Node2D" unique_id=429534821]
+script = ExtResource("1_8nfi5")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=231052630]
+
+[node name="TextureRect" type="TextureRect" parent="CanvasLayer" unique_id=793426233]
+offset_right = 1920.0
+offset_bottom = 1080.0
+texture = ExtResource("2_l3u63")
+metadata/_edit_use_anchors_ = true
+
+[node name="fade" parent="." unique_id=1333505389 instance=ExtResource("3_06ite")]

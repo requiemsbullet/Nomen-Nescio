@@ -1,0 +1,33 @@
+[gd_scene format=3 uid="uid://8j6l5e7kadsf"]
+
+[ext_resource type="Script" uid="uid://ckjne6xn6w5ol" path="res://in game scenes/night three/scripts/opening.gd" id="1_jybf6"]
+[ext_resource type="FontFile" uid="uid://bqfo3k1vpm5id" path="res://assets/fonts/Pixel Operator/PixelOperator-Bold.ttf" id="2_troqe"]
+
+[node name="Opening" type="Node2D" unique_id=702530332]
+script = ExtResource("1_jybf6")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=80034196]
+offset_right = 1920.0
+offset_bottom = 1080.0
+color = Color(0, 0, 0, 1)
+metadata/_edit_use_anchors_ = true
+
+[node name="Label" type="Label" parent="." unique_id=450147503]
+offset_right = 1920.0
+offset_bottom = 1080.0
+theme_override_fonts/font = ExtResource("2_troqe")
+theme_override_font_sizes/font_size = 360
+text = "NIGHT THREE"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Label2" type="Label" parent="." unique_id=355966348]
+offset_left = 1488.0
+offset_top = 1016.0
+offset_right = 1902.0
+offset_bottom = 1060.0
+theme_override_fonts/font = ExtResource("2_troqe")
+theme_override_font_sizes/font_size = 40
+text = "press enter to continue"
+horizontal_alignment = 1
+vertical_alignment = 1

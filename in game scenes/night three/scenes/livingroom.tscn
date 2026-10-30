@@ -1,0 +1,18 @@
+[gd_scene format=3 uid="uid://dvrb7ocjlf82t"]
+
+[ext_resource type="Script" uid="uid://dplcu3oh7kqg6" path="res://in game scenes/night three/scripts/livingroom.gd" id="1_td07y"]
+[ext_resource type="Texture2D" uid="uid://dnbf2fqkak0qm" path="res://assets/bg/clivingroom.png" id="2_pc80b"]
+[ext_resource type="PackedScene" uid="uid://bwon5bwco8eiw" path="res://scenes/utility/fade.tscn" id="3_60flw"]
+
+[node name="Livingroom" type="Node2D" unique_id=1554223188]
+script = ExtResource("1_td07y")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1478859947]
+
+[node name="TextureRect" type="TextureRect" parent="CanvasLayer" unique_id=247646696]
+offset_right = 1920.0
+offset_bottom = 1080.0
+texture = ExtResource("2_pc80b")
+metadata/_edit_use_anchors_ = true
+
+[node name="fade" parent="." unique_id=1333505389 instance=ExtResource("3_60flw")]

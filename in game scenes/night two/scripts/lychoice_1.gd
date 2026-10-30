@@ -29,4 +29,4 @@ func start_room_dialogue() -> void:
 	
 func _on_dialogue_finished() -> void:
 	await fade.fade(1.0, 2.0).finished
-	get_tree().change_scene_to_file("res://in game scenes/night two/scenes/choices/lychoicemenu.tscn")
+	get_tree().change_scene_to_file("res://in game scenes/night three/scenes/opening.tscn")

@@ -3,11 +3,9 @@ extends Node2D
 
 func _ready() -> void:
 	DialogueManager.dialogue_finished.connect(_on_dialogue_finished)
-
 	fade.show()
 	fade.get_node("ColorRect").color = Color.BLACK
 	fade.get_node("ColorRect").color.a = 1.0
-	
 	await get_tree().process_frame
 	await fade.fade(0.0, 0.5).finished
 	
@@ -19,6 +17,13 @@ func start_room_dialogue() -> void:
 	DialogueManager.queue_dialogue("maria", "but... it's the same. the same fireplace, same chair, same doors.")
 	DialogueManager.queue_dialogue("maria", "the house must have settled.")
 	DialogueManager.queue_dialogue("maria", "or it became used to my presence.")
+	DialogueManager.queue_dialogue("maria", "...")
+	DialogueManager.queue_dialogue("maria", "i wonder where sylvan is tonight...")
+	DialogueManager.queue_dialogue("maria", "i should start looking.")
+	DialogueManager.queue_dialogue("maria", "where should i look first?
+	0.1 the bedroom
+	0.2 the laundry room
+	0.3 the kitchen")
 
 func _on_dialogue_finished() -> void:
 	get_tree().change_scene_to_file("res://in game scenes/night three/scenes/livingroomc.tscn")

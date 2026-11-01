@@ -1,3 +1,270 @@
 [gd_scene format=3 uid="uid://vhndw3vjpu8y"]
 
+[ext_resource type="Script" uid="uid://df5ks2anqonhu" path="res://in game scenes/night three/scripts/livingroomc.gd" id="1_tya82"]
+[ext_resource type="Texture2D" uid="uid://dnbf2fqkak0qm" path="res://assets/bg/clivingroom.png" id="2_bv1g8"]
+[ext_resource type="PackedScene" uid="uid://bwon5bwco8eiw" path="res://scenes/utility/fade.tscn" id="3_yrj4y"]
+[ext_resource type="FontFile" uid="uid://bqfo3k1vpm5id" path="res://assets/fonts/Pixel Operator/PixelOperator-Bold.ttf" id="4_cojku"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_t3kv6"]
+bg_color = Color(0, 0, 0, 1)
+border_width_left = 4
+border_width_top = 4
+border_width_right = 4
+border_width_bottom = 4
+
 [node name="Livingroom" type="Node2D" unique_id=1554223188]
+script = ExtResource("1_tya82")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1513338948]
+
+[node name="TextureRect" type="TextureRect" parent="CanvasLayer" unique_id=467057553]
+offset_right = 1920.0
+offset_bottom = 1080.0
+texture = ExtResource("2_bv1g8")
+metadata/_edit_use_anchors_ = true
+
+[node name="fade" parent="." unique_id=1333505389 instance=ExtResource("3_yrj4y")]
+visible = false
+
+[node name="CanvasLayer2" type="CanvasLayer" parent="." unique_id=1748778302]
+layer = 10
+
+[node name="textboxcontainer" type="MarginContainer" parent="CanvasLayer2" unique_id=686676435]
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 320.0
+offset_top = -280.0
+offset_right = -320.0
+offset_bottom = -32.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_constants/margin_left = 15
+theme_override_constants/margin_top = 15
+theme_override_constants/margin_right = 15
+theme_override_constants/margin_bottom = 15
+
+[node name="Panel" type="Panel" parent="CanvasLayer2/textboxcontainer" unique_id=648487755]
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_t3kv6")
+
+[node name="MarginContainer" type="MarginContainer" parent="CanvasLayer2/textboxcontainer" unique_id=785480483]
+layout_mode = 2
+theme_override_constants/margin_left = 15
+theme_override_constants/margin_top = 15
+theme_override_constants/margin_right = 15
+theme_override_constants/margin_bottom = 15
+
+[node name="Panel" type="Panel" parent="CanvasLayer2/textboxcontainer/MarginContainer" unique_id=1204449186]
+layout_mode = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="CanvasLayer2/textboxcontainer/MarginContainer" unique_id=772254918]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="CanvasLayer2/textboxcontainer/MarginContainer/HBoxContainer" unique_id=488773326]
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0
+theme_override_fonts/font = ExtResource("4_cojku")
+theme_override_font_sizes/font_size = 50
+text = "`"
+
+[node name="Label2" type="Label" parent="CanvasLayer2/textboxcontainer/MarginContainer/HBoxContainer" unique_id=597798863]
+custom_minimum_size = Vector2(1, 0)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 1
+theme_override_fonts/font = ExtResource("4_cojku")
+theme_override_font_sizes/font_size = 42
+text = "where should i look first?
+	0.1 the bedroom
+	0.2 the laundry room
+	0.3 the kitchen"
+autowrap_mode = 2
+clip_text = true
+
+[node name="Label3" type="Label" parent="CanvasLayer2/textboxcontainer/MarginContainer/HBoxContainer" unique_id=582300458]
+layout_mode = 2
+size_flags_vertical = 8
+theme_override_fonts/font = ExtResource("4_cojku")
+theme_override_font_sizes/font_size = 50
+text = "*"
+
+[node name="nameboxcontainer" type="MarginContainer" parent="CanvasLayer2" unique_id=337826799]
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 320.0
+offset_top = -368.0
+offset_right = -1392.0
+offset_bottom = -257.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_constants/margin_left = 15
+theme_override_constants/margin_top = 15
+theme_override_constants/margin_right = 15
+theme_override_constants/margin_bottom = 15
+
+[node name="Panel" type="Panel" parent="CanvasLayer2/nameboxcontainer" unique_id=752490265]
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_t3kv6")
+
+[node name="MarginContainer" type="MarginContainer" parent="CanvasLayer2/nameboxcontainer" unique_id=124838954]
+layout_mode = 2
+theme_override_constants/margin_left = 15
+theme_override_constants/margin_top = 15
+theme_override_constants/margin_right = 15
+theme_override_constants/margin_bottom = 15
+
+[node name="Panel" type="Panel" parent="CanvasLayer2/nameboxcontainer/MarginContainer" unique_id=2132703264]
+layout_mode = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="CanvasLayer2/nameboxcontainer/MarginContainer" unique_id=1202366081]
+layout_mode = 2
+
+[node name="Label2" type="Label" parent="CanvasLayer2/nameboxcontainer/MarginContainer/HBoxContainer" unique_id=219035673]
+custom_minimum_size = Vector2(1, 0)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 1
+theme_override_fonts/font = ExtResource("4_cojku")
+theme_override_font_sizes/font_size = 50
+text = "???"
+horizontal_alignment = 1
+autowrap_mode = 2
+clip_text = true
+
+[node name="choiceboxcontainer1" type="MarginContainer" parent="CanvasLayer2" unique_id=1168548711]
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 1184.0
+offset_top = -376.0
+offset_right = -600.0
+offset_bottom = -257.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_constants/margin_left = 15
+theme_override_constants/margin_top = 15
+theme_override_constants/margin_right = 15
+theme_override_constants/margin_bottom = 15
+
+[node name="Panel" type="Panel" parent="CanvasLayer2/choiceboxcontainer1" unique_id=2109854967]
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_t3kv6")
+
+[node name="MarginContainer" type="MarginContainer" parent="CanvasLayer2/choiceboxcontainer1" unique_id=1336138076]
+layout_mode = 2
+theme_override_constants/margin_left = 15
+theme_override_constants/margin_top = 15
+theme_override_constants/margin_right = 15
+theme_override_constants/margin_bottom = 15
+
+[node name="Panel" type="Panel" parent="CanvasLayer2/choiceboxcontainer1/MarginContainer" unique_id=2042479077]
+layout_mode = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="CanvasLayer2/choiceboxcontainer1/MarginContainer" unique_id=1118814732]
+layout_mode = 2
+
+[node name="Label2" type="Button" parent="CanvasLayer2/choiceboxcontainer1/MarginContainer/HBoxContainer" unique_id=1640948014]
+custom_minimum_size = Vector2(1, 0)
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_fonts/font = ExtResource("4_cojku")
+theme_override_font_sizes/font_size = 50
+text = "O.1"
+autowrap_mode = 2
+clip_text = true
+
+[node name="choiceboxcontainer2" type="MarginContainer" parent="CanvasLayer2" unique_id=11280739]
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 1320.0
+offset_top = -376.0
+offset_right = -464.0
+offset_bottom = -257.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_constants/margin_left = 15
+theme_override_constants/margin_top = 15
+theme_override_constants/margin_right = 15
+theme_override_constants/margin_bottom = 15
+
+[node name="Panel" type="Panel" parent="CanvasLayer2/choiceboxcontainer2" unique_id=1451678365]
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_t3kv6")
+
+[node name="MarginContainer" type="MarginContainer" parent="CanvasLayer2/choiceboxcontainer2" unique_id=160154042]
+layout_mode = 2
+theme_override_constants/margin_left = 15
+theme_override_constants/margin_top = 15
+theme_override_constants/margin_right = 15
+theme_override_constants/margin_bottom = 15
+
+[node name="Panel" type="Panel" parent="CanvasLayer2/choiceboxcontainer2/MarginContainer" unique_id=401154858]
+layout_mode = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="CanvasLayer2/choiceboxcontainer2/MarginContainer" unique_id=1799458697]
+layout_mode = 2
+
+[node name="Label2" type="Button" parent="CanvasLayer2/choiceboxcontainer2/MarginContainer/HBoxContainer" unique_id=854847137]
+custom_minimum_size = Vector2(1, 0)
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_fonts/font = ExtResource("4_cojku")
+theme_override_font_sizes/font_size = 50
+text = "O.2"
+autowrap_mode = 2
+clip_text = true
+
+[node name="choiceboxcontainer3" type="MarginContainer" parent="CanvasLayer2" unique_id=1531445891]
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 1456.0
+offset_top = -376.0
+offset_right = -320.0
+offset_bottom = -257.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_constants/margin_left = 15
+theme_override_constants/margin_top = 15
+theme_override_constants/margin_right = 15
+theme_override_constants/margin_bottom = 15
+
+[node name="Panel" type="Panel" parent="CanvasLayer2/choiceboxcontainer3" unique_id=1108079464]
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_t3kv6")
+
+[node name="MarginContainer" type="MarginContainer" parent="CanvasLayer2/choiceboxcontainer3" unique_id=1603035749]
+layout_mode = 2
+theme_override_constants/margin_left = 15
+theme_override_constants/margin_top = 15
+theme_override_constants/margin_right = 15
+theme_override_constants/margin_bottom = 15
+
+[node name="Panel" type="Panel" parent="CanvasLayer2/choiceboxcontainer3/MarginContainer" unique_id=184170465]
+layout_mode = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="CanvasLayer2/choiceboxcontainer3/MarginContainer" unique_id=1943381340]
+layout_mode = 2
+
+[node name="Label2" type="Button" parent="CanvasLayer2/choiceboxcontainer3/MarginContainer/HBoxContainer" unique_id=147462669]
+custom_minimum_size = Vector2(1, 0)
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_fonts/font = ExtResource("4_cojku")
+theme_override_font_sizes/font_size = 50
+text = "O.3"
+autowrap_mode = 2
+clip_text = true
+
+[connection signal="pressed" from="CanvasLayer2/choiceboxcontainer1/MarginContainer/HBoxContainer/Label2" to="." method="_on_label_1_pressed"]
+[connection signal="pressed" from="CanvasLayer2/choiceboxcontainer2/MarginContainer/HBoxContainer/Label2" to="." method="_on_label_2_pressed"]
+[connection signal="pressed" from="CanvasLayer2/choiceboxcontainer3/MarginContainer/HBoxContainer/Label2" to="." method="_on_label_3_pressed"]

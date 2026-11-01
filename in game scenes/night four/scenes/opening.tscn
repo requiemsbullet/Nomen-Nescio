@@ -1,0 +1,33 @@
+[gd_scene format=3 uid="uid://xmbge81iagym"]
+
+[ext_resource type="Script" uid="uid://c321jads2h4pl" path="res://in game scenes/night four/scripts/opening.gd" id="1_xfsta"]
+[ext_resource type="FontFile" uid="uid://bqfo3k1vpm5id" path="res://assets/fonts/Pixel Operator/PixelOperator-Bold.ttf" id="2_hscgb"]
+
+[node name="Opening" type="Node2D" unique_id=1576492435]
+script = ExtResource("1_xfsta")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=64835999]
+offset_right = 1920.0
+offset_bottom = 1080.0
+color = Color(0, 0, 0, 1)
+metadata/_edit_use_anchors_ = true
+
+[node name="Label" type="Label" parent="." unique_id=1425844703]
+offset_right = 1920.0
+offset_bottom = 1080.0
+theme_override_fonts/font = ExtResource("2_hscgb")
+theme_override_font_sizes/font_size = 360
+text = "NIGHT FOUR"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Label2" type="Label" parent="." unique_id=2116602533]
+offset_left = 1488.0
+offset_top = 1016.0
+offset_right = 1902.0
+offset_bottom = 1060.0
+theme_override_fonts/font = ExtResource("2_hscgb")
+theme_override_font_sizes/font_size = 40
+text = "press enter to continue"
+horizontal_alignment = 1
+vertical_alignment = 1

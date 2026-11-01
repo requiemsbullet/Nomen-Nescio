@@ -3,7 +3,6 @@ extends Node2D
 
 func _ready() -> void:
 	DialogueManager.dialogue_finished.connect(_on_dialogue_finished)
-
 	fade.show()
 	fade.get_node("ColorRect").color = Color.BLACK
 	fade.get_node("ColorRect").color.a = 0.0

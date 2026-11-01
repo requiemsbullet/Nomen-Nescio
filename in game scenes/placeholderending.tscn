@@ -1,0 +1,48 @@
+[gd_scene format=3 uid="uid://cibrsu4ugw0d4"]
+
+[ext_resource type="Script" uid="uid://bkdsf3p3auusk" path="res://scripts/placeholderending.gd" id="1_2f4i2"]
+[ext_resource type="FontFile" uid="uid://bqfo3k1vpm5id" path="res://assets/fonts/Pixel Operator/PixelOperator-Bold.ttf" id="2_fh5rn"]
+
+[node name="Placeholderending" type="Node2D" unique_id=1272832452]
+script = ExtResource("1_2f4i2")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=645700690]
+offset_right = 1920.0
+offset_bottom = 1080.0
+color = Color(0, 0, 0, 1)
+metadata/_edit_use_anchors_ = true
+
+[node name="Label" type="Label" parent="." unique_id=2089155032]
+offset_top = -432.0
+offset_right = 1920.0
+offset_bottom = 648.0
+theme_override_fonts/font = ExtResource("2_fh5rn")
+theme_override_font_sizes/font_size = 201
+text = "thank you for playing"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Label3" type="Label" parent="." unique_id=1010694159]
+custom_minimum_size = Vector2(0, 1)
+offset_top = 248.0
+offset_right = 1920.0
+offset_bottom = 641.0
+theme_override_fonts/font = ExtResource("2_fh5rn")
+theme_override_font_sizes/font_size = 62
+text = "nomen nescio was originally created to be a visual novel made within the renpy engine and then reopened for save point.
+
+when completed, it will contain five nights and three varying endings based on the choice in objects and one seperate choice if you get every object correct. "
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 2
+
+[node name="Label2" type="Label" parent="." unique_id=796546645]
+offset_left = 1488.0
+offset_top = 1016.0
+offset_right = 1902.0
+offset_bottom = 1060.0
+theme_override_fonts/font = ExtResource("2_fh5rn")
+theme_override_font_sizes/font_size = 40
+text = "press enter to continue"
+horizontal_alignment = 1
+vertical_alignment = 1

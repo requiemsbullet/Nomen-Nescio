@@ -1,0 +1,21 @@
+[gd_scene format=3 uid="uid://c6hjc5y8gvjyu"]
+
+[ext_resource type="Texture2D" uid="uid://x4doxui344wy" path="res://assets/bg/bathroom.png" id="1_i5vo2"]
+[ext_resource type="Script" uid="uid://c6lhwthm43yhc" path="res://in game scenes/night four/scripts/bathroom.gd" id="1_wv0fo"]
+[ext_resource type="PackedScene" uid="uid://bwon5bwco8eiw" path="res://scenes/utility/fade.tscn" id="3_gq0vr"]
+[ext_resource type="PackedScene" uid="uid://w3lk3qkwdj01" path="res://scenes/utility/inventory.tscn" id="4_5egn8"]
+
+[node name="Bathroom" type="Node2D" unique_id=743526407]
+script = ExtResource("1_wv0fo")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1848647855]
+
+[node name="TextureRect" type="TextureRect" parent="CanvasLayer" unique_id=809431324]
+offset_right = 1920.0
+offset_bottom = 1080.0
+texture = ExtResource("1_i5vo2")
+metadata/_edit_use_anchors_ = true
+
+[node name="fade" parent="." unique_id=1333505389 instance=ExtResource("3_gq0vr")]
+
+[node name="inventory" parent="." unique_id=1473888032 instance=ExtResource("4_5egn8")]

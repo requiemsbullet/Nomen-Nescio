@@ -1,0 +1,18 @@
+[gd_scene format=3 uid="uid://bpru26x5hym8a"]
+
+[ext_resource type="Texture2D" uid="uid://d02lsxc138x0o" path="res://assets/bg/kitchens.png" id="1_57axd"]
+[ext_resource type="Script" uid="uid://dx0nk30gouy84" path="res://in game scenes/night four/scripts/kchoicemenu.gd" id="1_we3v1"]
+[ext_resource type="PackedScene" uid="uid://w3lk3qkwdj01" path="res://scenes/utility/inventory.tscn" id="3_2c61l"]
+
+[node name="Kchoicemenu" type="Node2D" unique_id=589801455]
+script = ExtResource("1_we3v1")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=538737640]
+
+[node name="TextureRect" type="TextureRect" parent="CanvasLayer" unique_id=1380989085]
+offset_right = 1920.0
+offset_bottom = 1080.0
+texture = ExtResource("1_57axd")
+metadata/_edit_use_anchors_ = true
+
+[node name="inventory" parent="." unique_id=1473888032 instance=ExtResource("3_2c61l")]

@@ -1,0 +1,21 @@
+[gd_scene format=3 uid="uid://umrdsunsge6q"]
+
+[ext_resource type="Texture2D" uid="uid://723d3ctybe4a" path="res://assets/bg/laundry.png" id="1_xloyx"]
+[ext_resource type="Script" uid="uid://c2lhk6ysckbpe" path="res://in game scenes/night four/scripts/laundry.gd" id="1_ybfaj"]
+[ext_resource type="PackedScene" uid="uid://bwon5bwco8eiw" path="res://scenes/utility/fade.tscn" id="3_5q3wn"]
+[ext_resource type="PackedScene" uid="uid://w3lk3qkwdj01" path="res://scenes/utility/inventory.tscn" id="4_uo84r"]
+
+[node name="Laundry" type="Node2D" unique_id=802924220]
+script = ExtResource("1_ybfaj")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1852502574]
+
+[node name="TextureRect" type="TextureRect" parent="CanvasLayer" unique_id=769742152]
+offset_right = 1920.0
+offset_bottom = 1080.0
+texture = ExtResource("1_xloyx")
+metadata/_edit_use_anchors_ = true
+
+[node name="fade" parent="." unique_id=1333505389 instance=ExtResource("3_5q3wn")]
+
+[node name="inventory" parent="." unique_id=1473888032 instance=ExtResource("4_uo84r")]

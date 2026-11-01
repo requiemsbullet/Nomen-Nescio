@@ -59,16 +59,18 @@ autowrap_mode = 1
 custom_minimum_size = Vector2(1, 0)
 layout_mode = 0
 offset_left = 8.0
-offset_top = 392.0
+offset_top = 376.0
 offset_right = 1720.0
-offset_bottom = 551.0
+offset_bottom = 787.0
 theme_override_fonts/font = ExtResource("2_t2ujj")
-theme_override_font_sizes/font_size = 50
+theme_override_font_sizes/font_size = 42
 text = "enter - progress within dialogue and between scenes
 escape - pause the game , open up in game settings menu [ wip , non init ]
 i - open inventory , observe items retrieved [ wip , non init ]
 
-each story told in nomen nescio has a reason. when making your choices, remind yourself of the fate of the traveller. "
+each story told in nomen nescio has a reason. when making your choices, remind yourself of the fate of the traveller. 
+
+as of being shipped, nights 1 - 3 have been completed. nomen nescio is intended to be a 5 night  multiple ending game that will be continued post-end of save point. thank you for playing"
 autowrap_mode = 1
 
 [node name="Label3" type="Label" parent="Label2" unique_id=354849892]

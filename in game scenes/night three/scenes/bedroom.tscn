@@ -1,3 +1,18 @@
 [gd_scene format=3 uid="uid://cxyrvnrbyxsfx"]
 
+[ext_resource type="Script" uid="uid://cjvcyj75dplbt" path="res://in game scenes/night three/scripts/bedroom.gd" id="1_5chet"]
+[ext_resource type="Texture2D" uid="uid://swj1mcyks6fk" path="res://assets/bg/bedrooms.png" id="1_vr8n3"]
+[ext_resource type="PackedScene" uid="uid://bwon5bwco8eiw" path="res://scenes/utility/fade.tscn" id="2_5chet"]
+
 [node name="Bedroom" type="Node2D" unique_id=770650284]
+script = ExtResource("1_5chet")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1540411751]
+
+[node name="TextureRect" type="TextureRect" parent="CanvasLayer" unique_id=1516987795]
+offset_right = 1920.0
+offset_bottom = 1080.0
+texture = ExtResource("1_vr8n3")
+metadata/_edit_use_anchors_ = true
+
+[node name="fade" parent="." unique_id=1333505389 instance=ExtResource("2_5chet")]

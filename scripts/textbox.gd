@@ -55,7 +55,6 @@ func _process(_delta: float) -> void:
 				display_text()
 			else:
 				hide_textbox()
-				print("DEBUG: DialogueManager successfully emitting dialogue_finished!")
 				dialogue_finished.emit()
 
 func queue_dialogue(speaker: String, text: String) -> void:

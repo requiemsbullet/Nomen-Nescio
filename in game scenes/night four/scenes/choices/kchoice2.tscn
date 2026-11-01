@@ -1,0 +1,21 @@
+[gd_scene format=3 uid="uid://uo3jhme0j60s"]
+
+[ext_resource type="Texture2D" uid="uid://d02lsxc138x0o" path="res://assets/bg/kitchens.png" id="1_30dm5"]
+[ext_resource type="Script" uid="uid://c4wwlhgx7qjpx" path="res://in game scenes/night four/scripts/kchoice_2.gd" id="1_i6bav"]
+[ext_resource type="PackedScene" uid="uid://bwon5bwco8eiw" path="res://scenes/utility/fade.tscn" id="3_5ugy4"]
+[ext_resource type="PackedScene" uid="uid://w3lk3qkwdj01" path="res://scenes/utility/inventory.tscn" id="4_prbug"]
+
+[node name="Kchoice2" type="Node2D" unique_id=747329227]
+script = ExtResource("1_i6bav")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=653523032]
+
+[node name="TextureRect" type="TextureRect" parent="CanvasLayer" unique_id=1198122333]
+offset_right = 1920.0
+offset_bottom = 1080.0
+texture = ExtResource("1_30dm5")
+metadata/_edit_use_anchors_ = true
+
+[node name="fade" parent="." unique_id=1333505389 instance=ExtResource("3_5ugy4")]
+
+[node name="inventory" parent="." unique_id=1473888032 instance=ExtResource("4_prbug")]

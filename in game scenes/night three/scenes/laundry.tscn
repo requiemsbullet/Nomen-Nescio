@@ -1,3 +1,18 @@
 [gd_scene format=3 uid="uid://ch4aj8fiabudj"]
 
+[ext_resource type="Script" uid="uid://bxtaed342al8j" path="res://in game scenes/night three/scripts/laundry.gd" id="1_tsmj2"]
+[ext_resource type="Texture2D" uid="uid://723d3ctybe4a" path="res://assets/bg/laundry.png" id="2_47pg6"]
+[ext_resource type="PackedScene" uid="uid://bwon5bwco8eiw" path="res://scenes/utility/fade.tscn" id="2_tsmj2"]
+
 [node name="Laundry" type="Node2D" unique_id=495607573]
+script = ExtResource("1_tsmj2")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=2006429348]
+
+[node name="TextureRect" type="TextureRect" parent="CanvasLayer" unique_id=801857904]
+offset_right = 1920.0
+offset_bottom = 1080.0
+texture = ExtResource("2_47pg6")
+metadata/_edit_use_anchors_ = true
+
+[node name="fade" parent="." unique_id=1333505389 instance=ExtResource("2_tsmj2")]
